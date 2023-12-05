@@ -1,22 +1,18 @@
-### ConvolutionalNeuralNetwork
-- This class is used to create, train, save, load, and predict the results of the Convolutional Neural Network.
-- The model has two branches, one for the board and one for the turn: 
-  -  The board branch is a convolutional neural network that takes in the board as a tensor and outputs a tensor.
-  - The turn branch is a fully connected neural network that takes in the turn as a tensor and outputs a tensor.
-- The two branches are then merged and passed through a series of fully connected layers. The output layer is a fully connected layer with 3 nodes, one for each possible result. The model is compiled with the Adam optimizer, categorical crossentropy loss, and accuracy metric. 
-- The model is trained for 128 epochs with a batch size of 64 and a validation split of 0.3.
+### ConvolutionalNeuralNetwork - This class is used to create, train, save, load, and predict the results of convolutional neural networks.
+ - The model has two branches, one for the board and one for the turn.
+ - The board branch is a convolutional neural network that takes  the board as a tensor and outputs a tensor.
+ - A turn branch is a fully connected neural network that takes turns as a tensor and outputs a tensor.
+ – The two branches are then merged and passed through a  fully connected set of layers.
+ The output layer is a fully connected layer with three nodes, one for each possible outcome.
+ The model was compiled using the Adam optimizer, categorical cross entropy loss, and accuracy metrics.
+ - The model is trained for 128 epochs with  batch size  64 and  validation split  0.3
+ #### Properties - input_board: Board branch input layer  - input_turn: Turn branch input layer  - Model: Neural network model  #### Method - 'train(path) ': Train the model using the dataset on the specified path.
+ - 'predict(fen=None,board_tensor=None,turn_tensor=None)': Predict the outcome of the given board and turn.
+ - 'save(path)': Save the model to the specified path.
+ - 'load(path)': Loads the model from the specified path.
+ - 'preprocess_data(path)': Preprocess the data set at the specified path.
 
-#### Properties
-- input_board: The input layer for the board branch
-- input_turn: The input layer for the turn branch
-- model: The model of the neural network
 
-#### Methods
-- `train(path)`: Train the model with the dataset at the given path.
-- `predict(fen=None, board_tensor=None, turn_tensor=None)`: Predict the result of the given board and turn.
-- `save(path)`: Save the model to the given path.
-- `load(path)`: Load the model from the given path.
-- `preprocess_data(path)`: Preprocess the dataset at the given path.
 
 #### Example 
 ```python
