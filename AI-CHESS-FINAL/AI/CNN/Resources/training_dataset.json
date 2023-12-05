@@ -116,14 +116,14 @@
       "result": "1-0"
     },
     {
-      "board": "r1bqkb1r/pppp2pp/5p2/4p3/3nP1Q1/2NP3N/PPP2PPP/R1B1KB1R b KQkq - 0 7",
-      "turn": "b",
-      "result": "0-1"
-    },
-    {
       "board": "6k1/5pp1/pN2pq1p/PbRp4/1P1P2Q1/3r2P1/7P/4R1K1 b - - 7 32",
       "turn": "b",
       "result": "1/2-1/2"
+    },
+    {
+      "board": "r1bqkb1r/pppp2pp/5p2/4p3/3nP1Q1/2NP3N/PPP2PPP/R1B1KB1R b KQkq - 0 7",
+      "turn": "b",
+      "result": "0-1"
     },
     {
       "board": "6k1/5pp1/pN2pq1p/PbRp4/1P1r4/6PQ/7P/4R1K1 b - - 1 33",
