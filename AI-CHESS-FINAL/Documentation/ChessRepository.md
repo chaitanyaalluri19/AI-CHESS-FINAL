@@ -1,20 +1,13 @@
-### ChessRepository
-- The ChessRepository class is responsible for managing the game board and the pieces.
+### ChessRepository - The pieces and game board are managed by the ChessRepository class.
 
 #### Properties
-- `board`: A 2D array that represents the game board. Each element of the array is either a piece object or `None`.
-- `pieces`: A list of all the pieces on the board.
-- `history`: A list of all the moves that have been made in the game.
-- `turn`: A string that indicates whose turn it is. It can be either `w` or `b`.
-- `half_moves`: An integer that indicates the number of half moves that have been made since the last capture or pawn move.
-- `number_of_moves`: An integer that indicates the number of moves that have been made in the game.
-- `game_over`: A boolean that indicates whether the game is over or not.
-
-#### Methods
-- `initialize_board([fen])`: Initializes the board with the starting position or the position specified by the FEN string.
-- `remove_piece(piece)`: Removes the piece from the board.
-- `fen()`: Returns the FEN string of the current position.
-
+- {board}: The game board is represented by a 2D array. Every element in the array is either {None} or a piece object.
+- {pieces}: An inventory of every piece on the board.
+- {history}: A rundown of every move made during the game.
+- {turn}: A string designating who is taking the turn. It might be {w} or {b}.
+- {half_moves}: An integer representing how many half moves have been made since the previous pawn or capture move.
+- {number_of_moves}: An integer representing the total number of moves made during the game.
+- {game_over}: A boolean indicating whether or not the game has ended.
 #### Example
 ```python
 chess_repository = ChessRepository()
