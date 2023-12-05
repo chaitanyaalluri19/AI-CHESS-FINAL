@@ -1,33 +1,23 @@
-### Project overview
-- This project is a fully functional chess game implemented in Python, that allows the users to play against a computer using various algorithms (MCTS and Minmax). It includes:
-  - A chess repository class that manages the game board and the pieces
-  - A game state class that handles the game logic
-  - A MCTS class that implements the Monte Carlo Tree Search algorithm
-  - A Minimax class that implements the Minimax algorithm
-  - A GUI class that implements the graphical user interface
-  - A UI class that implements the command line user interface
-  - A CNN class that implements a convolutional neural network.
+Project overview: This is a Python-based, fully functional chess game that lets users play against a computer using different algorithms (MCTS and Minmax). It consists of the following: - A class for managing the chess board and pieces in a repository
+  - A class called game state, which manages the logic of the game; - A class called MCTS, which executes the Monte Carlo Tree Search algorithm; - A class called Minimax, which executes the Minimax algorithm; - A class called GUI, which executes the graphical user interface
+  - A CNN class that implements a convolutional neural network; - A UI class that implements the command line user interface.
   
 
 
-- `ChessRepository`: Handles the game board and pieces, each chess piece has its own class.
-- `GameState`: Implements game logic and rules.
-- `MCTS`: Implements Monte Carlo Tree Search algorithm for AI.
-  - `MCTSNode`: Implements the node of the MCTS tree.
-- `Minimax`: Implements Minimax algorithm for AI.
-- `GUI`: Implements the graphical user interface.
-- `UI`: Implements the command line user interface.
-- `Piece`: Base class for all chess pieces.
-  - `Pawn`: Inherits from Piece, implements Pawn's specific behavior.
-  - `Rook`: Inherits from Piece, implements Rook's specific behavior.
-  - `Knight`: Inherits from Piece, implements Knight's specific behavior.
-  - `Bishop`: Inherits from Piece, implements Bishop's specific behavior.
-  - `Queen`: Inherits from Piece, implements Queen's specific behavior.
-  - `King`: Inherits from Piece, implements King's specific behavior.
-- `ConvolutionalNeuralNetwork`: Implements a convolutional neural network.
-  - `TensorConverter`: Implements a class that converts a chess board to a tensor.
+- `ChessRepository: Manages the chess board and pieces; every piece in the game has a unique class.
+- {GameState}: Puts rules and logic into action.
+- {MCTS}: AI Monte Carlo Tree Search algorithm implementation.
+  - {MCTSNode}: This code implements the MCTS tree's node.
+- {Minimax}: AI implementation of the Minimax algorithm.
+- {GUI}: Executes the graphical user interface framework.
+- {UI}: This command line user interface is implemented.
+The base class of all chess pieces is {Piece}.
+  - {Pawn}: Takes over from Piece and applies Pawn's unique actions.
+  - {Rook}: Takes over from Piece and applies the unique actions of Rook.
+  - {Knight}: Takes over from Piece and applies Knight's unique behavior.
+  - {Bishop}: Takes over from Piece and applies Bishop's unique actions.
+  - {Queen}: Takes over from Piece and applies Queen's unique actions.
+  - {King}: Takes over from Piece and applies King's unique actions.
+Convolutional neural networks are implemented by the `ConvolutionalNeuralNetwork` module.
+  Implements a class called `TensorConverter` that converts a chess board to a tensor
 
-
-- The Minimax algorithm on low depth tends to get stuck in local optimums, resulting in it playing the same move over and over again. For example, it might move the rook back and forth until the end of the game.
-- The HashTable implementation for the Minimax algorithm is not working properly, so it is not used in the current version of the project.
-- The CNN has a limited dataset, therefore it is not as accurate as it could be.
